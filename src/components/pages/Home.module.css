@@ -1,0 +1,28 @@
+.home_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 4em;
+}
+.row2{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.home_container h1{
+    font-size: 2.5em;
+    margin-bottom: .9em;
+}
+.home_container h1 span {
+    color:#7280CB;
+    padding: 0 0.2em ;
+}
+.home_container p {
+    margin-bottom: 3.5em;
+    color: #7b7b7b;
+}
+.home_container img{
+    width: 500px;
+    margin: 2em;
+}

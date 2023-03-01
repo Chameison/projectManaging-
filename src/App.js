@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/contact" element={ <Contact /> } />
           <Route exact path="/projects" element={ <Projects /> } />
 
-          <Route exact path="/newproject" element={ <NewProject /> } />
+          <Route exact path="/newprojects" element={ <NewProject /> } />
       </Routes>
       </Container>
       <Footer />
