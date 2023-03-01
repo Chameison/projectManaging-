@@ -1,7 +1,8 @@
 .newproject_container{
     width: 450px;
-    margin: 0 auto;
+    margin: 0 100px;
     padding: 3em;
+    display: grid;
 }
 
 .newproject_container h1{
@@ -9,4 +10,9 @@
 }
 .newproject_container p {
     color: #7b7b7b;
+}
+.container_dad{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
