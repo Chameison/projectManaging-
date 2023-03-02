@@ -33,7 +33,7 @@ function ProjectForm({handleSubmit, btnText, projectData}){
         setProject({ ...project,
              category: {
                 id: e.target.value,
-                name: e.target.options[e.target.selectedIndex]
+                name: e.target.options[e.target.selectedIndex].text, //quase um noSQL
              },
             })
         console.log(project)
@@ -42,11 +42,11 @@ function ProjectForm({handleSubmit, btnText, projectData}){
         <form onSubmit={submit} className={styles.form}>
             <Input type="text" text="Nome do Projeto..." 
             name="name" placeholder="Insira o nome do Projeto"
-             handleOnChange={handleChange} value={project.name ? project.name : ''} />
+             handleOnChange={handleChange} value={project.name} />
             
             <Input type="number" text="Orçamento do Projeto..." 
             name="budget" placeholder="Insira o Orçamento Total" 
-            handleOnChange={handleChange} value={project.budget ? project.budget : ''} />
+            handleOnChange={handleChange} value={project.budget} />
 
 
             <Select name="category_id" text="Selecioe a Categoria"

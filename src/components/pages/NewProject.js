@@ -4,10 +4,9 @@ import styles from './NewProject.module.css'
 
 
 //Layout 
-import Container from '../layouts/Container'
 function NewProject(){
 
-    const history = useNavigate() // 
+    const navigate = useNavigate();
     function createPost(project){
         //Alguns comecçam xerados e serao preenchidos no sistema
         
@@ -23,8 +22,8 @@ function NewProject(){
             }).then((res) => res.json())
             .then((data)=>{
                 console.log(data)
-                history.pushState('/projects', {message: 'Projeto criado com sucesso'})
-                //redirect
+                navigate('/projects',{ state: {message: 'Projeto criado com sucesso'}})
+                    //redirect
             })
             .catch(err=>console.log(err))
     }
