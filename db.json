@@ -6,87 +6,10 @@
         "name": "infra"
       },
       "budget": "1111",
-      "name": "ddd",
+      "name": "Projeto 1",
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "budget": "1111",
-      "name": "ddd",
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "budget": "1111",
-      "name": "ddd",
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "asas",
-      "budget": "111",
-      "category": {
-        "id": "2",
-        "name": "Desenolvimneto"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "asas",
-      "budget": "111",
-      "category": {
-        "id": "2",
-        "name": "Desenolvimneto"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "asasas",
-      "budget": "2000",
-      "category": {
-        "id": "2",
-        "name": "Desenolvimneto"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "asasas",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenolvimneto"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "asasas",
-      "budget": "788",
-      "category": {
-        "id": "2",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
     },
     {
       "name": "Primeiro projeto",
@@ -100,20 +23,15 @@
       "id": 9
     },
     {
-      "cost": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "name": "TESTE NOOVO",
-      "budget": "20000",
+      "name": "Terceito Projeto",
+      "budget": "5000",
       "category": {
         "id": "3",
         "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
-      "id": 11
+      "id": 10
     }
   ],
   "categories": [
@@ -123,7 +41,7 @@
     },
     {
       "id": 2,
-      "name": "Desenolvimneto"
+      "name": "Desenvolvimento"
     },
     {
       "id": 2,

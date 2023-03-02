@@ -14,19 +14,24 @@ import Projects from './components/pages/Projects';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+      <Router>
 
-      <Routes>
-          <Route exact path="/" element={ <Home /> } />
-          <Route exact path="/company" element={ <Company /> } />
-          <Route exact path="/contact" element={ <Contact /> } />
-          <Route exact path="/projects" element={ <Projects /> } />
+        <Navbar />
+        <Container>
 
-          <Route exact path="/newprojects" element={ <NewProject /> } />
-      </Routes>
-      <Footer />
-      </Router>
+          <Routes>
+              <Route exact path="/" element={ <Home /> } />
+              <Route exact path="/company" element={ <Company /> } />
+              <Route exact path="/contact" element={ <Contact /> } />
+              <Route exact path="/projects" element={ <Projects /> } />
+
+              <Route exact path="/newprojects" element={ <NewProject /> } />
+          </Routes>
+        </Container>
+
+        <Footer />
+        </Router>
+    
   );
 }
 
