@@ -15,6 +15,7 @@ function Project() {
   //vamos criar um styate respnsavel por mostrar ou nao o projeto
 
   const [showProjectForm, setShowProjectForm] = useState(false);
+  const [showServiceForm, setShowServiceForm] = useState(false);
   //vmos criar uma funcao anonimas
   useEffect(() => {
     setTimeout(() => {
@@ -33,6 +34,7 @@ function Project() {
   }, [id]); //depois de finalizarmos essa requisição termos acesso de forma dinamica aos dados do projeto que foi clicado
 
   function editPost(project) {
+    setMessage('')
     //budget Validation
     if (project.budget < project.cost) {
       setMessage('O orçamento não pode ser menor que o custo do projeto')
@@ -59,6 +61,9 @@ function Project() {
 
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);
+  }
+  function toggleServiceForm() {
+    setShowServiceForm(!showServiceForm);
   }
 
   return (
@@ -96,6 +101,21 @@ function Project() {
                 </div>
               )}
             </div>
+            <div className={styles.service_form_container}>
+              <h2>Adicione um serviço</h2>
+              <button onClick={toggleServiceForm} className={styles.btn}>{!showServiceForm ? 'Adicionar Serviço' : 'Fechar' }</button>
+              <div className={styles.project_info}>
+                {showServiceForm && (
+                  <div>
+                    Form
+                  </div>
+                )}
+              </div>
+            </div>
+            <h2>Serviços</h2>
+            <Container customClass="start">
+                  <p>Itens dos Serviços</p>
+            </Container>
           </Container>
         </div>
       ) : (
