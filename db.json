@@ -1,37 +1,26 @@
 {
   "projects": [
     {
+      "name": "caca",
+      "budget": "1000",
       "category": {
-        "id": "1",
-        "name": "infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
-      "budget": "1111",
-      "name": "Projeto 1",
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
-      "name": "Primeiro projeto",
-      "budget": "1000",
+      "name": "Projeto 2 ",
+      "budget": "10000",
       "category": {
         "id": "2",
-        "name": "Design"
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-      "id": 9
-    },
-    {
-      "name": "Terceito Projeto",
-      "budget": "5000",
-      "category": {
-        "id": "3",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
+      "id": 2
     }
   ],
   "categories": [

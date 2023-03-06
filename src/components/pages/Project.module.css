@@ -1,9 +1,42 @@
-.project_container{
+.project_details{
   padding: 2em;
+  border: 1px solid black;
+}
+.project_details p, h1, h2{
+  margin-bottom: 0.5em;
+}
+.project_details h1{
+  background-color: #222;
+  color: #7280CB;
+  padding: 0.4em;
+}
+.project_details span{
+  font-weight: bold;
 }
 
-.title_container{
+.details_container, .service_form_container{
+  border-bottom: 1px solid solid #7a7a7a;
+  margin-bottom: 1.2em ;
+  padding-bottom: 1.2em;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+  max-height: 40px;
+  border: none;
+}
+.btn:hover {
+  color: #7280cb;
+}
+
+.project_info{
+  width: 100%;
 }
