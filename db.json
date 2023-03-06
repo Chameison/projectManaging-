@@ -12,25 +12,20 @@
       "id": 1
     },
     {
-      "name": "Projeto 2 ",
-      "budget": "5000",
+      "name": "Projeto 2 q",
+      "budget": "7000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1200,
+      "deadline": "2023-03-25",
+      "cost": 1221,
       "services": [
         {
-          "cost": "1000",
-          "name": "Prototipação",
-          "description": "prototipar o site",
-          "id": "f3cf080a-bc10-4657-9415-940483155158"
-        },
-        {
-          "cost": "200",
-          "name": "Servidor",
-          "description": "AAA",
-          "id": "5628b40b-572c-45df-b03f-6d5d2119fd6a"
+          "name": "asasas",
+          "cost": "1221",
+          "description": "3131",
+          "id": "f17e3c6e-2e32-48d2-b797-1c79fff8a699"
         }
       ],
       "id": 2

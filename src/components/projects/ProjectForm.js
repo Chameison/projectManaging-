@@ -7,6 +7,8 @@ function ProjectForm({handleSubmit, btnText, projectData}){
 
     const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
+
+
     //React nao entende bem essa renedereização e fica fazendo mapeamento par ver se tem dados infinitamente, usamos entao o useEffet()
     useEffect(() => { //usamos para que seja feita somente uma vez
         fetch("http://localhost:5000/categories", { 
@@ -38,6 +40,7 @@ function ProjectForm({handleSubmit, btnText, projectData}){
             })
         console.log(project)
     }
+
     return(
         <form onSubmit={submit} className={styles.form}>
             <Input type="text" text="Nome do Projeto..." 
@@ -48,7 +51,14 @@ function ProjectForm({handleSubmit, btnText, projectData}){
             name="budget" placeholder="Insira o Orçamento Total" 
             handleOnChange={handleChange} value={project.budget} />
 
-
+            <Input
+            type="date"
+            text="Prazo do Projeto..."
+            name="deadline"
+            placeholder="Insira o prazo do Projeto"
+            handleOnChange={handleChange}
+            value={project.deadline}
+            />
             <Select name="category_id" text="Selecioe a Categoria"
             options={categories} handleOnChange={handleCategory}
             value={project.category ? project.category.id : ''} //achar o valor e setar se tiver vazio
