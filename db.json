@@ -18,8 +18,21 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1200,
+      "services": [
+        {
+          "cost": "1000",
+          "name": "Prototipação",
+          "description": "prototipar o site",
+          "id": "f3cf080a-bc10-4657-9415-940483155158"
+        },
+        {
+          "cost": "200",
+          "name": "Servidor",
+          "description": "AAA",
+          "id": "5628b40b-572c-45df-b03f-6d5d2119fd6a"
+        }
+      ],
       "id": 2
     }
   ],
